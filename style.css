@@ -82,7 +82,7 @@ nav img{
 }{
 
 }
-nav .fa{
+.nav .fa{
     display: none;
 }
 @media(max-width: 700px){
@@ -97,18 +97,42 @@ nav .fa{
         background: #f44336;
         height: 100vh;
         width: 200px;
-        top: 0px;
-        right: 0px;
+        top: 0;
+        right: -200px;
         text-align: left;
         z-index: 2;
+        transition: 1s;
 
     }  
-    nav .fa{
+    .nav .fa{
         display: block;
         color: #fff;
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
     }
+    .nav-links ul{
+        padding: 30px;
+    }
     
+}
+
+
+.course{
+    width: 80%;
+    margin: auto ;
+    text-align: center;
+    padding-top: 100px;
+}
+.h1{
+    font-size: 36px;
+    font-weight: 600;
+
+}
+.p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
 }

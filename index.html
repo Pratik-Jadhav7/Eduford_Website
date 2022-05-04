@@ -16,8 +16,8 @@
     <section class="header"> 
         <nav>
         <a href="index.html"><img src="eduford_img/logo.png"></a>
-        <div class="nav-links">
-            <i class="fa fa-times"></i>
+        <div class="nav-links" id="navLink">
+            <i class="fa fa-times" onclick="hideMenu()" aria-hidden="true"></i>
             <ul>
             <li><a href="">HOME</a></li>
             <li><a href="">ABOUT</a></li>
@@ -26,7 +26,7 @@
             <li><a href="">CONTACT</a></li>
             </ul>
             </div>
-            <i class="fa fa-bars"></i>  
+            <i class="fa fa-bars" onclick="showMenu()" aria-hidden="true"></i> 
         </nav>
         <div class="text-box">
             <h1>World's Biggest University</h1>
@@ -34,7 +34,29 @@
             <a href="" class="hero-btn">Visit Us To Know More</a>
         </div>
 
+    </section> 
+
+    <section class="course">
+        <h1>Courses we offfer</h1>
+        <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
     </section>
-    
+
+
+
+
+
+    <script>
+
+       var navLink = document.getElementById("navLink");
+
+       function showMenu(){
+           navLink.style.right = "0"; 
+       }
+       function hideMenu(){
+           navLink.style.right = "-200";
+       }
+
+    </script>
 </body>
 </html>
